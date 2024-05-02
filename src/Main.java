@@ -26,18 +26,16 @@ public class Main {
         }else {
             System.out.println("nuevos lanzanmientos");
         };
+        int i =0;
 
-        for (int i = 0; i < 3; i++) {
+        while ( i < 3) {
             Scanner teclado = new Scanner(System.in);
             System.out.println("ingresa la nota que le darías a Matrix");
             double notaMatrix = teclado.nextDouble();
              mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaMatrix ;
+            i++;
 
         }
         System.out.println("la nota que sacó Matrix es : " + mediaEvaluacionUsuario / 3);
-
-
-
-
     }
 }
