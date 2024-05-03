@@ -1,41 +1,19 @@
-import java.util.Scanner;
+import modelo.Pelicula;
 
 public class Main {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
+            Pelicula matrix = new Pelicula();
+            matrix.nombre = "Matrix";
+            matrix.tiempoDeDuracionEnMinutos = 120;
+            matrix.fechaDeLanzamiento = 1999;
+            System.out.println(matrix.nombre);
+            System.out.println(matrix.fechaDeLanzamiento);
+            System.out.println(matrix.tiempoDeDuracionEnMinutos);
 
-//Declaración de variables con values de distintos tipos.
-        int fechaDeLanzamiento = 1999; //camel case
-        double evaluacion = 4.5;
-        boolean incluidoEnElplanbasico = true;
-        String nombre = "Matrix";
-        String sinopsis = """
-                La mejor película del año, una de acción de todos los tiempos""";
-        double mediaEvaluacionUsuario = 0;
-
-        System.out.println("Película: " + nombre);
-        System.out.println(fechaDeLanzamiento);
-        System.out.println(evaluacion);
-        System.out.println(incluidoEnElplanbasico);
-
-        double mediaEvaluacion = (4.5 + 4.8 + 3)/3;
-        System.out.println("estrellas : "+ mediaEvaluacion);
-
-        if (fechaDeLanzamiento < 2023)
-        {
-            System.out.println("Una película retro para volver a ver..");
-        }else {
-            System.out.println("nuevos lanzanmientos");
-        };
-        int i =0;
-
-        while ( i < 3) {
-            Scanner teclado = new Scanner(System.in);
-            System.out.println("ingresa la nota que le darías a Matrix");
-            double notaMatrix = teclado.nextDouble();
-             mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaMatrix ;
-            i++;
-
+            Pelicula encanto = new Pelicula();
+            encanto.nombre = "Encanto";
+            encanto.tiempoDeDuracionEnMinutos = 120;
+            encanto.fechaDeLanzamiento = 2022;
+            encanto.muestraFichaTecnica();
         }
-        System.out.println("la nota que sacó Matrix es : " + mediaEvaluacionUsuario / 3);
     }
-}
