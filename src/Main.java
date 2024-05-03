@@ -12,7 +12,11 @@ public class Main {
 
             Serie friends = new Serie();
             friends.setNombre("Friends");
-            friends.getFechaDeLanzamiento(1999);
+            friends.setFechaDeLanzamiento(1999);
+            friends.setTemporada(10);
+            friends.setEpisodiosPorTemporada(22);
+            friends.setDuracionEnMinutosPorEpisodio(30);
+            friends.muestraFichaTecnica();
 
 
 
