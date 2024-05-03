@@ -28,7 +28,8 @@ public class Pelicula {
         return evaluacion;
     }
 
-
+    public void setEvaluacion(double evaluacion) {
+        this.evaluacion = evaluacion;
     }
 
     public boolean isIncluidoEnElPlan() {
@@ -55,12 +56,10 @@ public class Pelicula {
         this.tiempoDeDuracionEnMinutos = tiempoDeDuracionEnMinutos;
     }
 
-    public void muestraFichaTecnica(){
+    public void muestraFichaTecnica() {
         System.out.println("***FICHA TÉCNICA***");
-        System.out.println("nombre de la película" +" " + nombre);
-        System.out.println("Fecha de lanzamiento" +" "+ fechaDeLanzamiento);
-        System.out.println("Tiempo de duración" +" "+ tiempoDeDuracionEnMinutos +" " + "minutos");
-
-    };
-
+        System.out.println("Nombre de la película: " + nombre);
+        System.out.println("Fecha de lanzamiento: " + fechaDeLanzamiento);
+        System.out.println("Tiempo de duración: " + tiempoDeDuracionEnMinutos + " minutos");
     }
+}
